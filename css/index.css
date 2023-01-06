@@ -39,7 +39,7 @@ ul {
 
 @font-face {
     font-family: 'Helvetica';
-    src: url('./fonts/HelveticaNeue.ttf') format('ttf');
+    src: url('/fonts/HelveticaNeue.ttf') format('ttf');
 }
 
 html {
@@ -105,7 +105,7 @@ nav ul {
 .hero_bg {
     width: 100%;
     height: auto;
-    background-image: url(./images/hero.svg);
+    background-image: url(/images/hero.svg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
