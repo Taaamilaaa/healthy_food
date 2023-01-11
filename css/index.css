@@ -147,7 +147,7 @@ nav ul {
     font-weight: 800;
 }
 
-.hero-title~p {
+.hero-title ~ p {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.625rem;
@@ -207,13 +207,11 @@ section.about {
     position: relative;
     text-align: center;
     margin-bottom: 3.75rem;
-
 }
 
-.about>.title-container {
+.about > .title-container {
     margin-bottom: 1rem;
 }
-
 
 .title-container h1 {
     display: inline-block;
@@ -297,9 +295,8 @@ section.about {
 
 /* work */
 
-
 .title-container::after {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 2px;
@@ -308,7 +305,7 @@ section.about {
     margin-right: auto;
 }
 
-.about>.title-container::after {
+.about > .title-container::after {
     display: inline;
 }
 
@@ -318,8 +315,7 @@ section.about {
 
 .work-list {
     display: grid;
-    grid-template: 1fr /repeat(4, 1fr);
-
+    grid-template: 1fr / repeat(4, 1fr);
 }
 
 .work-list li {
@@ -341,7 +337,7 @@ section.about {
 }
 
 .work-list h4::after {
-    content: "";
+    content: '';
     display: block;
     width: 56px;
     height: 2px;
@@ -366,7 +362,6 @@ section.about {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px 30px;
-
 }
 
 .dishes-list li {
@@ -386,14 +381,14 @@ section.about {
 .item-content__container h3 {
     font-size: 2rem;
     line-height: 94%;
-    color: #D9D9D9;
+    color: #d9d9d9;
 }
 
 .item-content__container span {
     font-size: 0.75rem;
     line-height: 133%;
     letter-spacing: -0.15px;
-    color: #A4A8B2;
+    color: #a4a8b2;
     margin-bottom: 1.25rem;
 }
 
@@ -401,7 +396,7 @@ section.about {
     font-size: 0.8rem;
     line-height: 138%;
     letter-spacing: -0.1625px;
-    color: #85878C;
+    color: #85878c;
     margin-bottom: 20px;
 }
 
@@ -442,7 +437,6 @@ section.about {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .chef-list__item-content {
@@ -482,7 +476,7 @@ section.about {
     font-size: 1.125rem;
     line-height: 1.3125rem;
     letter-spacing: -0.225px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .chef-position {
@@ -510,13 +504,11 @@ section.about {
 }
 
 .social-list__item {
-
     background: #252525;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
     width: 21.875rem;
     height: 20.625rem;
-
 }
 
 .social-list__item-heder {
@@ -531,7 +523,7 @@ section.about {
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
-    color: #BFBFBF;
+    color: #bfbfbf;
 }
 
 .social-list a {
@@ -565,12 +557,15 @@ section.about {
 
 .social-list article {
     padding: 20px 35px;
-
 }
 
 .article-container {
     height: 15rem;
-    overflow: scroll;
+    overflow-y: scroll;
+}
+.article-container::-webkit-scrollbar {
+    width: 2px;
+    background-color: #f9f9fd;
 }
 
 .social-list__insta {
@@ -600,25 +595,21 @@ footer .logo {
     margin-bottom: 0.625rem;
 }
 @media screen and (max-width: 1200px) {
-    html{
+    html {
         font-size: 16px;
     }
-    .slider-list{
+    .slider-list {
         justify-content: center;
     }
-    .slider-list li:last-child{
+    .slider-list li:last-child {
         display: none;
     }
-    
 }
 
 @media screen and (max-width: 1190px) {
-
     .work-list {
-
         grid-template: repeat(2, 1fr) / repeat(2, 1fr);
         gap: 30px 30px;
-
     }
 
     .work-list__continer {
@@ -650,7 +641,7 @@ footer .logo {
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    .social-list__item:not(:last-child){
+    .social-list__item:not(:last-child) {
         margin-bottom: 30px;
     }
 }
