@@ -664,7 +664,7 @@ footer .logo {
     margin-bottom: 0.625rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     html {
         font-size: 16px;
     }
@@ -695,7 +695,7 @@ footer .logo {
     }
 }
 
-@media screen and (max-width: 1190px) {
+@media only screen and (max-width: 1190px) {
     .work-list {
         grid-template: repeat(2, 1fr) / repeat(2, 1fr);
         gap: 30px 30px;
@@ -727,7 +727,7 @@ footer .logo {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     .title-container h2 {
         visibility: hidden;
     }
@@ -741,7 +741,7 @@ footer .logo {
     }
 }
 
-@media screen and (max-width: 870px) {
+@media only screen and (max-width: 870px) {
     
     section.about {
         padding-bottom: 6.25rem;
@@ -767,7 +767,7 @@ footer .logo {
     }
 }
 
-@media screen and (max-width: 746px) {
+@media only screen and (max-width: 746px) {
     
         .work-list {
         grid-template: repeat(4, 1fr) / repeat(1, 1fr);
