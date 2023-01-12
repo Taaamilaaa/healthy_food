@@ -742,6 +742,7 @@ footer .logo {
 }
 
 @media screen and (max-width: 870px) {
+    
     section.about {
         padding-bottom: 6.25rem;
     }
@@ -767,9 +768,7 @@ footer .logo {
 }
 
 @media screen and (max-width: 746px) {
-    html{
-        font-style: 14px;
-    }
+    
         .work-list {
         grid-template: repeat(4, 1fr) / repeat(1, 1fr);
     }
