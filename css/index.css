@@ -635,19 +635,20 @@ article span {
     color: #737373;
 }
 
-.social-list__insta { 
-height: 239px;  
-display:flex;
-flex-wrap: wrap;
+.social-list__insta {
+    height: 239px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.img-container{
+.img-container {
     width: calc(100% / 3);
     height: calc(100% / 2);
     background-size: cover;
     background-position: center;
 }
-.social-list__insta-img_1{
+
+.social-list__insta-img_1 {
     background-image: url(../images/insta_img_1.svg);
 }
 
@@ -682,7 +683,9 @@ footer {
     padding: 1.875rem 0;
 }
 
-footer .contacts {
+.footer-contacts ul{
+/* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ; */
     padding: 0 0 2rem 0;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
     margin-bottom: 1.875rem;
@@ -695,6 +698,7 @@ footer .logo {
     margin-bottom: 0.625rem;
 }
 
+   
 @media only screen and (max-width: 1200px) {
     .social-list {
         flex-wrap: wrap;
@@ -755,13 +759,10 @@ footer .logo {
 }
 
 @media only screen and (max-width: 1000px) {
-    .title-container h2 {
-        visibility: hidden;
-    }
-
-    /* section.about {
+  
+    section.about {
         padding: 3.75rem 8rem 5.625rem 8rem;
-    } */
+    }
 
     .dishes-list {
         grid-template: repeat(3, 1fr) / repeat(2, 1fr);
@@ -770,7 +771,9 @@ footer .logo {
 
 @media only screen and (max-width: 870px) {
 
-
+    section.about {
+        padding: 3.75rem 105px 5.625rem;
+    }
 
     button.slider-btn__left,
     button.slider-btn__right {
@@ -785,28 +788,49 @@ footer .logo {
     button.slider-btn__right {
         right: -15px;
     }
-
+ 
     .slider-item__container {
-        width: 30rem;
-        height: 25rem;
+        width: 100%;
+        height: 370px;
+    } 
+         .slider-list__item {
+             width: 100%;
+         }
+
+    .work-list {
+        grid-template: repeat(4, 1fr) / repeat(1, 1fr);
     }
-}
-@media only screen and (min-width: 1201px){
 
-}
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
-    
-}
+    .chef-list__item-content {
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+        justify-content: center;
+    }
 
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px){
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    section.about {
+        padding: 3.75rem 30px 5.625rem;
+    }
+
+   .slider-list__item {
+        width: 90%;
+        height: 370px;
+    } 
+
+    .hero_bg {
+        background-size: 200%;
+
+    }
 
 }
 
-@media only screen and (min-width: 350px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .hero_bg {
+        background-size: 255%;
+
+    }
 
     section.work,
     section.chefs,
@@ -814,29 +838,23 @@ footer .logo {
         margin-bottom: 50px;
     }
 
-    section.about {
-        margin-bottom: 45px;
+    .title-container h2 {
+        visibility: hidden;
     }
 
     .header {
         display: block;
+        padding-top: 30px;
     }
 
     .logo {
-
         margin-left: auto;
         margin-right: auto;
         width: 50%;
-
     }
 
     .nav-list {
         width: 100%;
-    }
-
-    .hero_bg {
-        background-size: 250%;
-
     }
 
     .hero {
@@ -859,12 +877,17 @@ footer .logo {
         margin: 0;
     }
 
-    .hero .contacts {
+   section.hero .contacts {
         display: none;
-    }
+    } 
+   .footer-contacts ul{
+        /* grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr; */
+    } 
 
+   
     section.about {
-        padding: 1.85rem 4rem 2.8125rem 4rem;
+        padding: 1.85rem 16.5px 2.8125rem;
     }
 
     section.about p {
@@ -872,7 +895,6 @@ footer .logo {
     }
 
     .title-container h1 {
-
         font-size: 50px;
         line-height: 100px;
         color: #303030;
@@ -881,10 +903,14 @@ footer .logo {
     }
 
     .slider-item__container {
-        width: 255px;
+        width: 100%;
         height: 175px;
         margin-bottom: 20px;
     }
+
+                .slider-list__item {
+                width: 100%;
+            } 
 
     .slider button {
         position: static;
@@ -893,34 +919,31 @@ footer .logo {
     .slider-btn__left {
         margin-right: 30px;
     }
-
-    .work-list {
-        grid-template: repeat(4, 1fr) / repeat(1, 1fr);
-    }
-
-    .dish-img__list{
+    .dish-img__list {
         display: block;
-        
+
     }
-   
+
     .dishes-list {
         grid-template: repeat(6, 1fr) / repeat(1, 1fr);
-        
+
     }
 
     .dish-img__list li {
-        width: 100%;;
+        width: 100%;
+        ;
     }
 
     .dish-img__list li:not(:first-child) {
         display: none;
     }
 
-    .chefs-list__container{
+    .chefs-list__container {
         width: 100%;
     }
 
-    .chef-list__item-content{
-        justify-content: center;
+    .chef-list__item-content {
+        width: 100%;
+        justify-content: space-around;
     }
-   }
+}
