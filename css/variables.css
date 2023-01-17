@@ -1,0 +1,23 @@
+:root{
+    --accent-color: rgba(52, 199, 89, 1);
+    --text-color: rgba(255, 255, 255, 0.7);
+    --contarst-text-color: #1a1a1a;
+    --main-text-color: rgba(255, 255, 255, 0.5);
+    --section-title-color: #303030;
+    --section-title-addition-color: #d9d9d9;
+    --social-icon-color: #737373;
+    --white-text-color: #ffffff;
+
+    --body-bg: rgb(26, 26, 27);
+    --addition-bg-color: #252525;
+    --button-bg-color: #262626;
+
+    --box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+
+
+    --bottom-border: 2px solid rgba(255, 255, 255, 0.1);
+    --button-border: 2px solid var(--section-title-color);
+
+    --transition: .4s linear;
+    --button-active-transform: scale(1.1);
+}
