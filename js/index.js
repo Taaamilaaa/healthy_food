@@ -1,12 +1,12 @@
 import { refs } from './refs.js';
 const imgPath = [
-    '../images/about_1.png',
-    '../images/about_2.png',
-    '../images/dishes_1.png',
-    '../images/dishes_2.png',
-    '../images/dishes_3.png',
-    '../images/dishes_5.png',
-    '../images/dishes_6.png',
+    './images/about_1.png',
+    './images/about_2.png',
+    './images/dishes_1.png',
+    './images/dishes_2.png',
+    './images/dishes_3.png',
+    './images/dishes_5.png',
+    './images/dishes_6.png',
 ];
 
 refs.sliderForwardBtn.addEventListener('click', nextImg);
@@ -19,11 +19,13 @@ function nextImg(e) {
     let nextImgIndexFirst = imgSorter(oldImgFirst, e);
     let nextImgIndexSecond = imgSorter(oldImgSecond, e);
 
+    // const newImgFirst = 'helthy_food' + imgPath[nextImgIndexFirst];
+    // const newImgSecond = 'helthy_food' + imgPath[nextImgIndexSecond];
     const newImgFirst = imgPath[nextImgIndexFirst];
     const newImgSecond = imgPath[nextImgIndexSecond];
 
-    refs.sliderCont_1.style.backgroundImage = `url(${newImgFirst})`; //переписуємо в стилі url
-    refs.sliderCont_2.style.backgroundImage = `url(${newImgSecond})`;
+    refs.sliderCont_1.style.backgroundImage = `url('${newImgFirst}')`; //переписуємо в стилі url
+    refs.sliderCont_2.style.backgroundImage = `url('${newImgSecond}')`;
 
     console.log(`url(${newImgFirst})`);
     console.log(`url(${newImgSecond})`);
