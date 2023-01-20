@@ -19,17 +19,11 @@ function nextImg(e) {
     let nextImgIndexFirst = imgSorter(oldImgFirst, e);
     let nextImgIndexSecond = imgSorter(oldImgSecond, e);
 
-    // const newImgFirst = 'helthy_food' + imgPath[nextImgIndexFirst];
-    // const newImgSecond = 'helthy_food' + imgPath[nextImgIndexSecond];
     const newImgFirst = imgPath[nextImgIndexFirst];
     const newImgSecond = imgPath[nextImgIndexSecond];
 
     refs.sliderCont_1.style.backgroundImage = `url('${newImgFirst}')`; //переписуємо в стилі url
     refs.sliderCont_2.style.backgroundImage = `url('${newImgSecond}')`;
-
-    console.log(`url(${newImgFirst})`);
-    console.log(`url(${newImgSecond})`);
-
 }
 
 function stringConversion(prop) {
@@ -39,14 +33,12 @@ function stringConversion(prop) {
     dirtyOldImg.splice(-2, 2); //прибираємо зайві символи
     const oldImg = dirtyOldImg.join(''); //об'єднуємо масив в строку і отримуємо чисту назву
 
-    console.log(oldImg);
-
     return oldImg;
 }
 
 function imgSorter(prop, e) {
     let nextImgIndex = 0;
-    
+
     imgPath.forEach((el, index) => {
         if (el.includes(prop)) {
             nextImgIndex = e.currentTarget.className.includes('slider-btn__right')
