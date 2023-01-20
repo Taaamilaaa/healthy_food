@@ -22,11 +22,12 @@ function nextImg(e) {
     const newImgFirst = imgPath[nextImgIndexFirst];
     const newImgSecond = imgPath[nextImgIndexSecond];
 
-    console.log(nextImgIndexFirst);
-    console.log(newImgSecond);
-
     refs.sliderCont_1.style.backgroundImage = `url(${newImgFirst})`; //переписуємо в стилі url
     refs.sliderCont_2.style.backgroundImage = `url(${newImgSecond})`;
+
+    console.log(`url(${newImgFirst})`);
+    console.log(`url(${newImgSecond})`);
+
 }
 
 function stringConversion(prop) {
