@@ -22,6 +22,9 @@ function nextImg(e) {
     const newImgFirst = imgPath[nextImgIndexFirst];
     const newImgSecond = imgPath[nextImgIndexSecond];
 
+    console.log(nextImgIndexFirst);
+    console.log(newImgSecond);
+
     refs.sliderCont_1.style.backgroundImage = `url(${newImgFirst})`; //переписуємо в стилі url
     refs.sliderCont_2.style.backgroundImage = `url(${newImgSecond})`;
 }
@@ -32,6 +35,8 @@ function stringConversion(prop) {
     const dirtyOldImg = arrayFromPath.splice(-1, 1).toString().split(''); //отримуємо назву малюнка з крайніми символами
     dirtyOldImg.splice(-2, 2); //прибираємо зайві символи
     const oldImg = dirtyOldImg.join(''); //об'єднуємо масив в строку і отримуємо чисту назву
+
+    console.log(oldImg);
 
     return oldImg;
 }
